@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splide carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <style>
+        section.custom__carousel__wrap {}
+
+        section.custom__carousel__wrap .custom__carousel {
+            width: 630px;
+        }
+
+        section.custom__carousel__wrap .custom__carousel .img__wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section.custom__carousel__wrap .custom__carousel .splide__arrow {
+            border: 3px dashed #182663;
+            background-color: white;
+            opacity: 1;
+            height: 18px;
+            width: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 67%;
+        }
+
+        section.custom__carousel__wrap .custom__carousel .splide__arrow svg {
+            height: auto;
+            width: 8px;
+            fill: #182663;
+            stroke: #182663;
+        }
+
+        section.custom__carousel__wrap .custom__carousel .splide__arrow svg path {stroke: #182663;}
+
+        section.custom__carousel__wrap .custom__carousel .splide__arrow--prev {
+            left: 16px;
+        }
+
+        section.custom__carousel__wrap .custom__carousel .splide__arrow--next {
+            right: 44px;
+        }
+
+        section.custom__carousel__wrap .custom__carousel .splide__arrows {}
+
+        section.custom__carousel__wrap .custom__carousel .splide__pagination {}
+
+        section.custom__carousel__wrap .custom__carousel .splide__pagination .splide__pagination__page.is-active {
+            background: #182663;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="custom__carousel__wrap">
+        <div class="custom__carousel">
+            <div class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="img__wrap">
+                                <img src="splider.jpeg" alt="slide">
+                            </div>
+                          </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+var splide = new Splide( '.splide', {
+  type  : 'fade',
+  rewind: true,
+  rewindSpeed: 0,
+  speed: 0
+} );
+
+splide.mount();
+</script>
+</html>
